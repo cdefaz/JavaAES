@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <title>Encryption Generator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Encryption Form</h1>
+<p>Please enter the text you wish to encrypt below</p>
+<p>
+    <ul>
+    <li>The encryptor will take numbers</li>
+    <li>The encryptor will take all special characters</li>
+    <li>The encryptor will take all French accented characters</li>
+</ul>
+</p>
+<form action="#" th:action="@{/encryption}" th:object="${encryption}" method="post">
+    <p>Text: <input type="text" th:field="*{Text}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+<footer>
+    <p><a href="/">Home Page</a></p>
+</footer>
+</html>

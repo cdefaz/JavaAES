@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <title>Decryption WebForm</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Result</h1>
+    <p th:text="'Decrypted Text: ' + ${decryption.text}"></p>
+    <a href="/decryption">Decrypt another String</a>
+</body>
+<footer>
+    <p><a href="/">Home Page</a></p>
+</footer>
+</html>

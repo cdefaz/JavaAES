@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <title>Decryption WebForm</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Decrypt Text</h1>
+<p>Please enter the text and key in the appropriate boxes, then press submit</p>
+<form action="#" th:action="@{/decryption}" th:object="${decryption}" method="post">
+    <p>Encrypted Text: <input type="text" th:field="*{text}" /></p>
+    <p>Encrypted Key: <input type="text" th:field="*{key}"/></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+<footer>
+    <p><a href="/">Home Page</a></p>
+</footer>
+</body>
+</html>
